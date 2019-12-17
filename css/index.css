@@ -10,6 +10,73 @@ body
     
 }
 
+.test{border:solid red 1px;}
+.test2{border:solid blue 1px;}
+
+header
+{
+    background-color:#822;
+    color:white;
+}
+
+#header2
+{
+    display:flex;
+        justify-content:space-between;
+}
+
+#logo
+{
+    width:6em;
+    height:6em;
+}
+
+#title
+{
+    display:flex;
+        justify-content:center;
+        align-items:center;
+
+    width:90%;
+    font-size:2.8em;
+    font-weight:bold;
+
+    color:white;
+    stroke:orange;
+    stroke-width:5px;
+}
+
+#menu
+{
+    background-image:linear-gradient(to top,#822, #622);
+    padding:0.5em;
+
+    display:flex;
+        justify-content:space-between;
+}
+
+
+
+
+
+
+
+#menuIcon
+{
+    height:1.5em;
+    width:1.5em;
+}
+
+h1
+{
+    display:inline;
+}
+
+#titolo
+{
+    width:500px;
+}
+
 main {
     background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
     font-family: "Arial", sans-serif;
