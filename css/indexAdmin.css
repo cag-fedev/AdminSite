@@ -1,0 +1,23 @@
+body
+{
+    margin:0;
+    font-family:arial;
+
+    display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1.5fr 10fr;
+    height:100vh;
+}
+
+body {
+    background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    color: white;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    letter-spacing: 2px;
+}

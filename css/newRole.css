@@ -1,0 +1,10 @@
+body
+{
+    margin:0;
+    font-family:arial;
+
+    display:grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1.5fr 10fr;
+    height:100vh;
+}
