@@ -1,95 +1,85 @@
-body
-{
-    margin:0;
-    font-family:arial;
+body { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+	margin:0;
+	font-family: arial; /* la definizione del font non è corretta. Perchè? vedere la definizione alla riga 72 */
 
-    display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1.5fr 10fr;
-    height:100vh;
-    
+	display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:1.5fr 10fr;
+	height:100vh;
 }
 
-.test{border:solid red 1px;}
-.test2{border:solid blue 1px;}
+.test {  border:solid red 1px; }
+.test2 { border:solid blue 1px; }
 
-header
-{
-    background-color:#822;
-    color:white;
+header { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+	background-color:#822;
+	color:white;
 }
 
-#header2
-{
-    display:flex;
-        justify-content:space-between;
+#header2 { /* un div di tipo "header" dentro un tag header è fuorviante. Meglio utilizzare un nome di classe maggiormente descrittivo */
+	display:flex; /* rimuovere flex */
+		justify-content:space-between;
 }
 
-#logo
-{
-    width:6em;
-    height:6em;
+#logo {
+	width:6em;
+	height:6em;
 }
 
-#title
-{
-    display:flex;
-        justify-content:center;
-        align-items:center;
+#title {
+	display:flex; /* rimuovere flex */
+		justify-content:center;
+		align-items:center;
 
-    width:90%;
-    font-size:2.8em;
-    font-weight:bold;
+	width:90%;
+	font-size:2.8em;
+	font-weight:bold;
 
-    color:white;
-    stroke:orange;
-    stroke-width:5px;
+	color:white;
+	stroke:orange;
+	stroke-width:5px;
 }
 
-#menu
-{
-    background-image:linear-gradient(to top,#822, #622);
-    padding:0.5em;
+#menu {
+	background-image:linear-gradient(to top,#822, #622);
+	padding:0.5em;
 
-    display:flex;
-        justify-content:space-between;
+	display:flex; /* rimuovere flex */
+		justify-content:space-between;
 }
 
-
-
-
-
-
-
-#menuIcon
-{
-    height:1.5em;
-    width:1.5em;
+#menuIcon {
+	height:1.5em;
+	width:1.5em;
 }
 
-h1
-{
-    display:inline;
+h1 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+	display:inline; /* perchè inline? */
+	/*
+		h1 è un elemento block o inline?
+		https://www.w3schools.com/html/html_blocks.asp
+	*/
 }
 
-#titolo
-{
-    width:500px;
+#titolo {
+	/* sembrerebbe essere una classe orfana (non associata a nessun elemento).
+	MAI lasciare blocchi di codice orfani */
+	width:500px;
 }
 
-main {
-    background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
-    font-family: "Arial", sans-serif;
-    color: white;
-    position: relative;
-    top: 25%;
-    text-align: center;
-    letter-spacing: 2px;
+main { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+	background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+	font-family: "Arial", sans-serif;
+	color: white;
+
+	position: relative; /* perchè? cosa si vuole ottenere? */
+	top: 25%;           /* perchè? cosa si vuole ottenere? */
+
+	text-align: center;
+	letter-spacing: 2px;
 }
 
-h2 {
-    letter-spacing: 0px;
-    font-style: italic;
+h2 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+	letter-spacing: 0px;
+	font-style: italic;
 }
-
-
