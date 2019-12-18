@@ -1,35 +1,30 @@
-body { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+body {
 	margin:0;
-	font-family: arial; /* la definizione del font non è corretta. Perchè? vedere la definizione alla riga 72 */
-
 	display:grid;
 		grid-template-columns:1fr;
 		grid-template-rows:1.5fr 10fr;
 	height:100vh;
 }
 
-.test {  border:solid red 1px; }
-.test2 { border:solid blue 1px; }
-
-header { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
-	background-color:#822;
-	color:white;
+header
+{
+    font-family:"Arial",sans-serif;
 }
 
-#header2 { /* un div di tipo "header" dentro un tag header è fuorviante. Meglio utilizzare un nome di classe maggiormente descrittivo */
+#title-bar {
 	display:flex; /* rimuovere flex */
-		justify-content:space-between;
+        justify-content:space-between;
+    background-color:#822;
+    color:white;
 }
 
-#logo {
+img#logo {
 	width:6em;
 	height:6em;
 }
 
-#title {
-	display:flex; /* rimuovere flex */
-		justify-content:center;
-		align-items:center;
+span#title {
+    padding-top:20px;
 
 	width:90%;
 	font-size:2.8em;
@@ -40,46 +35,35 @@ header { /* meglio non definire uno stile che verrà applicato a tutti i tag di 
 	stroke-width:5px;
 }
 
-#menu {
+div#menu-bar {
 	background-image:linear-gradient(to top,#822, #622);
 	padding:0.5em;
-
-	display:flex; /* rimuovere flex */
-		justify-content:space-between;
+    text-align:right;
+        
+    background-color:#822;
+    color:white;
 }
 
-#menuIcon {
+img#menu-icon {
 	height:1.5em;
 	width:1.5em;
 }
 
-h1 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
-	display:inline; /* perchè inline? */
-	/*
-		h1 è un elemento block o inline?
-		https://www.w3schools.com/html/html_blocks.asp
-	*/
-}
-
-#titolo {
-	/* sembrerebbe essere una classe orfana (non associata a nessun elemento).
-	MAI lasciare blocchi di codice orfani */
-	width:500px;
-}
-
-main { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+main {
 	background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
 	font-family: "Arial", sans-serif;
 	color: white;
+}
 
-	position: relative; /* perchè? cosa si vuole ottenere? */
-	top: 25%;           /* perchè? cosa si vuole ottenere? */
-
+div#main-container
+{
+    position: relative;
+	top: 25%;
 	text-align: center;
 	letter-spacing: 2px;
 }
 
-h2 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+h2#h2-001 {
 	letter-spacing: 0px;
 	font-style: italic;
 }
