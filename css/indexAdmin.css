@@ -1,22 +1,91 @@
-body { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+body
+{
     margin:0;
-    font-family:arial; /* la definizione del font non è corretta. Perchè? vedere la definizione alla riga 72 di index.css */
-
     display:grid;
         grid-template-columns:1fr;
         grid-template-rows:1.5fr 10fr;
     height:100vh;
 }
 
-body { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
-    background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+header
+{
+    font-family:"Arial",sans-serif;
 }
 
-h1 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
-    font-family: "Arial", sans-serif;
-    color: white;
-    position: relative;  /* perchè? cosa si vuole ottenere? in index.css questo "stile" è applicato al contenitore e non al contenuto */
-    top: 30%;            /* perchè? cosa si vuole ottenere? in index.css questo "stile" è applicato al contenitore e non al contenuto */
-    text-align: center;
-    letter-spacing: 2px;
+#title-bar {
+	display:flex; /* rimuovere flex */
+        justify-content:space-between;
+    background-color:#822;
+    color:white;
+}
+
+img#logo {
+	width:6em;
+	height:6em;
+}
+
+span#title {
+    padding-top:20px;
+
+	width:90%;
+	font-size:2.8em;
+	font-weight:bold;
+
+	color:white;
+}
+
+div#menu-bar {
+	background-image:linear-gradient(to top,#822, #622);
+	padding:0.5em;
+        
+    background-color:#822;
+    color:white;
+}
+
+img#menu-icon {
+	height:1.5em;
+	width:1.5em;
+}
+
+#menu-bar ul
+{
+    margin:0;
+    display:inline-flex;
+    list-style-type: none;
+}
+
+#menu-bar li
+{
+    font-size:1.5em;
+    width:8em;
+}
+
+a
+{
+    text-decoration:none;
+    color:white;
+}
+
+a:hover, .link-active
+{
+    text-shadow: 1px 5px 10px white, 1px -5px 10px white;
+}
+
+main {
+	background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+	font-family: "Arial", sans-serif;
+	color: white;
+}
+
+div#main-container
+{
+    position: relative;
+	top: 30%;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+h1#h1-001
+{
+    text-shadow: 2px 2px 2px black;
 }
