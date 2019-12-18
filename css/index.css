@@ -63,10 +63,13 @@ div#main-container
 	letter-spacing: 2px;
 }
 
+<<<<<<< HEAD
 h2#h2-001 {
 	letter-spacing: 0px;
 	font-style: italic;
 }
+=======
+>>>>>>> 00205bc9b6da275489d54cfbdffab2f1e7d01a62
 h1#h1-001, h2#h2-001
 {
     text-shadow: 2px 2px 2px black;
