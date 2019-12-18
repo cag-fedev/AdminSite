@@ -9,11 +9,91 @@ body
     height:100vh;
 }
 
-body {
+/* ############################################################## */
+
+header
+{
+    background-color:#822;
+    color:white;
+}
+
+#header2
+{
+    display:flex;
+        justify-content:space-between;
+}
+
+#logo
+{
+    width:6em;
+    height:6em;
+}
+
+#title
+{
+    display:flex;
+        justify-content:center;
+        align-items:center;
+
+    width:90%;
+    font-size:2.8em;
+    font-weight:bold;
+
+    color:white;
+    stroke:orange;
+    stroke-width:5px;
+}
+
+#menu
+{
+    background-image:linear-gradient(to top,#822, #622);
+    padding:0.5em;
+}
+
+#menuIcon
+{
+    height:1.5em;
+    width:1.5em;
+}
+
+h1
+{
+    display:inline;
+}
+
+#menu ul
+{
+    margin:0;
+    display:inline-flex;
+    list-style-type: none;
+}
+
+#menu li
+{
+    font-size:1.5em;
+    width:8em;
+}
+
+a
+{
+    text-decoration:none;
+    color:white;
+}
+
+a:hover, .link-active
+{
+    text-shadow: 1px 5px 10px white, 1px -5px 10px white;
+}
+
+/* ############################################################## */
+
+main
+{
     background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
 }
 
-h1 {
+#welcomeText
+{
     font-family: "Arial", sans-serif;
     color: white;
     position: relative;
