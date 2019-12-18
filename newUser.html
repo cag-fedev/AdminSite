@@ -1,78 +1,75 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>AdminSite</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/newUser.css">
 </head>
 
 <body>
     <header>
         <!-- HEADER -->
-        header
+        <div id="title-bar">
+            <img  id="logo" src="imgs/arancia.png" alt="orange">
+            <span id="title">AranciApp</span>
+        </div>
+        <div id="menu-bar">
+            <a href="newUser.html">
+                <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
+            </a>
+        </div>
     </header>
-    <main>
-        <!-- CORPO -->
-        <h3>Inserisci nuovo utente</h3>
-        <form>
-            <table>
-                <tr>
-                    <td>
-                        Nome
-                    </td>
-                    <td>
-                        <input type="text" name="nome">
-                    </td>
-                <tr>
-                    <td>
-                        Cognome
-                    </td>
-                    <td>
-                        <input type="text" name="cognome">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Genere
-                    </td>
-                    <td>
-                        <input type="radio" name="gender" value="male" checked="checked"> M
-                        <input type="radio" name="gender" value="female"> F
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        User
-                    </td>
-                    <td>
-                        <input type="text" name="user">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Password
-                    </td>
-                    <td>
-                        <input type="password" name="password">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Data
-                    </td>
-                    <td>
-                        <input type="date" name="data_nascita">
-                    </td>
-                </tr>
-                <tr>
-                    <td id="submit" colspan="2">
-                        <input type="Submit" value="submit">
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </main>
-</body>
-
+    <main> <!-- CORPO -->            
+        <div id="box">
+            <h3 id="titolo_form">Inserisci nuovo utente</h3>
+            <form>
+                <table id="registrazione">
+                    <tr>
+                        <td class="label">Nome</td>
+                        <td class="label">
+                            <input class="campi" type="text" name="nome"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cognome</td>
+                        <td class="label">
+                            <input class="campi" type="text" name="cognome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Data</td>
+                        <td class="label">
+                            <input class="campi" type="date" name="data_nascita">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Genere</td>
+                        <td class="label">
+                            <input type="radio" name="gender" value="male" checked="checked"> M
+                            <input type="radio" name="gender" value="female"> F
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">User</td>
+                        <td class="label">
+                            <input  class="campi" type="text" name="user">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Password</td>
+                        <td class="label">
+                            <input  class="campi" type="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bottone" colspan="2">
+                            <input id="submit" type="Submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+              </form> 
+            </div>
+        </main>
+    </body>
 </html>

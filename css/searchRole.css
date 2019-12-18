@@ -1,10 +1,66 @@
-body
-{
-    margin:0;
-    font-family:arial;
-
+body { 
     display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1.5fr 10fr;
-    height:100vh;
-}
+    grid-template-columns:1fr;
+    grid-template-rows:1.5fr 10fr;
+  height:100vh;
+  }
+  
+  
+  #logo
+  {
+    width:6em;
+    height:6em;
+  }
+  
+  #title
+  {
+    display:flex;
+        justify-content:center;
+        align-items:center;
+  
+    width:90%;
+    font-size:2.8em;
+    font-weight:bold;
+  
+    color:white;
+    stroke:orange;
+    stroke-width:5px;
+  }
+  
+  
+  main{
+  background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+  font-family: "Arial", sans-serif;
+  color: white;
+  
+  }
+  
+  table.tabellasearch, th.intestazione, td.valori {
+  border: 3px solid #882222;
+  border-collapse: collapse;
+  width: 100px; 
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color:black;
+  border-radius: 8%;
+  }
+  
+  td.valori{
+  background-color: rgba(255, 215, 188, 0.877);
+  }
+  th.intestazione {
+  background-color: #882222;
+  color: white;
+  font-size: 1em;
+  }
+  
+  table.tabellasearch{
+  position: relative;  
+  top: 30%;            
+  letter-spacing: 2px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 20px #882222;
+  padding-top: 5px;
+  border-radius: 8%;
+  
+  }

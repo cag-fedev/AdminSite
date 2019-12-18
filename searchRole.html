@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>AdminSite</title>
-        <link rel="stylesheet" href="css/searchRole.css">
-    </head>
-    <body>
-        <header> <!-- HEADER -->
-            header
-        </header>
-        <main> <!-- CORPO -->
-            main
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AdminSite</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/searchRole.css">
+</head>
+
+<body>
+    <header> <!-- HEADER -->
+        <div id="title-bar">
+            <img  id="logo" src="imgs/arancia.png" alt="orange">
+            <span id="title">AranciApp</span>
+        </div>
+        <div id="menu-bar">
+            <a href="newUser.html">
+                <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- CORPO -->
+        <table class="tabellasearch">
+            <th class="intestazione">ID ruolo</th>
+            <th class="intestazione">Nome</td>
+            <th class="intestazione">Descrizione</th>
+            </tr>
+            <tr>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca id"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Nome"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Descrizione"></td>
+            </tr>
+            <tr>
+                <td class="valori">1546</td> 
+                <td class="valori">Impiegato</td> 
+                <td class="valori">aaaa</td> 
+            </tr>
+            <tr>
+                <td class="valori">1256</td> 
+                <td class="valori">Direttore</td> 
+                <td class="valori">bbbb</td> 
+            </tr>
+            <tr>
+                <td class="valori">2569</td> 
+                <td class="valori">Segretario</td> 
+                <td class="valori">bbbb</td> 
+            </tr>
+        </table>
+    </main>
+</body>
 </html>

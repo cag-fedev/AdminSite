@@ -1,95 +1,72 @@
-body
-{
-    margin:0;
-    font-family:arial;
-
-    display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows:1.5fr 10fr;
-    height:100vh;
-    
+body {
+	margin:0;
+	display:grid;
+		grid-template-columns:1fr;
+		grid-template-rows:1.5fr 10fr;
+	height:100vh;
 }
-
-.test{border:solid red 1px;}
-.test2{border:solid blue 1px;}
 
 header
 {
+    font-family:"Arial",sans-serif;
+}
+
+#title-bar {
+	display:flex; /* rimuovere flex */
+        justify-content:space-between;
     background-color:#822;
     color:white;
 }
 
-#header2
-{
-    display:flex;
-        justify-content:space-between;
+img#logo {
+	width:6em;
+	height:6em;
 }
 
-#logo
-{
-    width:6em;
-    height:6em;
+span#title {
+    padding-top:20px;
+
+	width:90%;
+	font-size:2.8em;
+	font-weight:bold;
+
+	color:white;
 }
 
-#title
-{
-    display:flex;
-        justify-content:center;
-        align-items:center;
-
-    width:90%;
-    font-size:2.8em;
-    font-weight:bold;
-
+div#menu-bar {
+	background-image:linear-gradient(to top,#822, #622);
+	padding:0.5em;
+    text-align:right;
+        
+    background-color:#822;
     color:white;
-    stroke:orange;
-    stroke-width:5px;
 }
 
-#menu
-{
-    background-image:linear-gradient(to top,#822, #622);
-    padding:0.5em;
-
-    display:flex;
-        justify-content:space-between;
-}
-
-
-
-
-
-
-
-#menuIcon
-{
-    height:1.5em;
-    width:1.5em;
-}
-
-h1
-{
-    display:inline;
-}
-
-#titolo
-{
-    width:500px;
+img#menu-icon {
+	height:1.5em;
+	width:1.5em;
 }
 
 main {
-    background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
-    font-family: "Arial", sans-serif;
-    color: white;
+	background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
+	font-family: "Arial", sans-serif;
+	color: white;
+}
+
+div#main-container
+{
     position: relative;
-    top: 25%;
-    text-align: center;
-    letter-spacing: 2px;
+	top: 25%;
+	text-align: center;
+	letter-spacing: 2px;
 }
 
-h2 {
-    letter-spacing: 0px;
-    font-style: italic;
+h2#h2-001 {
+	letter-spacing: 0px;
+	font-style: italic;
 }
 
-
+h1#h1-001, h2#h2-001
+{
+    text-shadow: 2px 2px 2px black;
+}

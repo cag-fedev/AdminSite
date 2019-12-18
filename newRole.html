@@ -3,14 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>AdminSite</title>
-        <link rel="stylesheet" href="css/newRole.css">
+        <link rel="stylesheet" href="css/newUser.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header> <!-- HEADER -->
-            header
+            <div id="title-bar">
+                <img  id="logo" src="imgs/arancia.png" alt="orange">
+                <span id="title">AranciApp</span>
+            </div>
+            <div id="menu-bar">
+                <a href="newUser.html">
+                    <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
+                </a>
+            </div>
         </header>
-        <main> <!-- CORPO -->
-            main
+        <main id="new-user"> <!-- CORPO -->            
+            <div id="box">
+                <h3 id="titolo_form">Inserisci nuovo ruolo</h3>
+                <form>
+                <table id="registrazione">
+                    <tr>
+                        <td class="label">Nome</td>
+                        <td class="label">
+                            <input class="campi" type="text" name="nome"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label vert-alg">Descrizione</td>
+                        <td class="label">
+                            <textarea class="campi" name="descrizione-ruolo" rows = "5" cols = "60"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bottone" colspan="2">
+                            <input id="submit" type="Submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+              </form> 
+            </div>
         </main>
     </body>
 </html>
