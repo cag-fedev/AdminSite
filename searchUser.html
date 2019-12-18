@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>AdminSite</title>
-        <link rel="stylesheet" href="css/searchUser.css">
-    </head>
-    <body>
-        <header> <!-- HEADER -->
-            header
-        </header>
-        <main> <!-- CORPO -->
-            main
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AdminSite</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/searchUser.css">
+</head>
+
+<body>
+    <header> <!-- HEADER -->
+        <div id="title-bar">
+            <img  id="logo" src="imgs/arancia.png" alt="orange">
+            <span id="title">AranciApp</span>
+        </div>
+        <div id="menu-bar">
+            <a href="newUser.html">
+                <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- CORPO -->
+        <table class="tabellasearch">
+            <tr>
+                <th class="intestazione">id Dipendente</th>
+                <th class="intestazione">Nome</th>
+                <th class="intestazione">Cognome</th>
+                <th class="intestazione">Data di nascita</th>
+                <th class="intestazione">Genere</th>
+                <th class="intestazione">User</th>
+                
+            </tr>
+            <tr>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca id"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Nome"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Cognome"></td>
+                <td class="valori"><input type="date" id="" onkeyup="" placeholder="Ricerca Data di nascita"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Genere"></td>
+                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca User"></td>
+            </tr>
+            <tr>
+
+                <td class="valori">001</td>
+                <td class="valori">Mario</td>
+                <td class="valori"> Rossi</td>
+                <td  class="valori">26/10/1960</td>
+                <td  class="valori">M</td>
+                <td  class="valori">MarioRossi</td>
+            </tr>
+            <tr>
+
+                <td class="valori">002</td>
+                <td class="valori">Paola</td>
+                <td class="valori">Verdi</td>
+                <td class="valori">15/05/1958</td>
+                <td class="valori">F</td>
+                <td class="valori">paola58</td>
+            </tr>
+            <tr>
+
+                <td class="valori">003</td>
+                <td class="valori">Luigi</td>
+                <td class="valori">Bianchi</td>
+                <td class="valori">01/03/1965</td>
+                <td class="valori">M</td>
+                <td class="valori">luigibianchi</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
 </html>
