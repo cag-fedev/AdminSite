@@ -6,8 +6,7 @@ body
     display:grid;
         grid-template-columns:1fr;
         grid-template-rows:1.5fr 10fr;
-    height:100vh;
-    
+    height:100vh; 
 }
 
 .test{border:solid red 1px;}
@@ -55,12 +54,6 @@ header
         justify-content:space-between;
 }
 
-
-
-
-
-
-
 #menuIcon
 {
     height:1.5em;
@@ -82,7 +75,7 @@ main {
     font-family: "Arial", sans-serif;
     color: white;
     position: relative;
-    top: 25%;
+    padding-top: 100px;
     text-align: center;
     letter-spacing: 2px;
 }

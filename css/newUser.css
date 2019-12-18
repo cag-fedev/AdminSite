@@ -12,11 +12,11 @@ body
 
 main {
     background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
-}
-
-h3{
     font-family: "Arial", sans-serif;
     color:black;
+}
+
+h3{  
     position: relative;
     text-align: center;
     padding-top: 30px;
@@ -25,29 +25,30 @@ h3{
 }
 
 form {
-    font-family: "Arial", sans-serif;
-    color:black;
     background-color: rgba(255, 215, 188, 0.877);
     width: 400px;
     height: 300px;
     position: relative;
-    margin: 30px;
     margin: 0 auto;
     padding-top: 5px;
     border-radius: 5%;
     box-shadow: 5px 5px 20px #882222;
-
 }
 
 table{
     position: relative;
     padding: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 td {
-    padding: 5px;
+    padding: 6px;
+}
+
+input[type~="text"], input[type~="password"],  input[type~="date"]{
+    width: 140px;
+    box-shadow: 3px 3px 10px #882222;
+    border-radius: 5px;
 }
 
 input[type~="Submit"]{
