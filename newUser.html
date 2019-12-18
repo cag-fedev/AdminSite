@@ -4,59 +4,70 @@
         <meta charset="UTF-8">
         <title>AdminSite</title>
         <link rel="stylesheet" href="css/newUser.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <header> <!-- HEADER -->
-            header <!-- INSERIRE TITLE BAR / NAVIGATION BAR -->
+            <div id="title-bar">
+                <img  id="logo" src="imgs/arancia.png" alt="orange">
+                <span id="title">AranciApp</span>
+            </div>
+            <div id="menu-bar">
+                <a href="newUser.html">
+                    <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
+                </a>
+            </div>
         </header>
-        <main> <!-- CORPO -->
-            <h3>Inserisci nuovo utente</h3><!-- Meglio inserire il testo esplicativo all'interno del box -->
-            <form>
-                <table>
+        <main id="new-user"> <!-- CORPO -->            
+            <div id="box">
+                <h3 id="titolo_form">Inserisci nuovo utente</h3>
+                <form>
+                <table id="registrazione">
                     <tr>
-                        <td>Nome</td>
-                        <td>
-                            <input type="text" name="nome"> 
+                        <td class="label">Nome</td>
+                        <td class="label">
+                            <input class="campi" type="text" name="nome"> 
                         </td>
                     </tr>
                     <tr>
-                        <td>Cognome</td>
-                        <td>
-                            <input type="text" name="cognome"> 
+                        <td class="label">Cognome</td>
+                        <td class="label">
+                            <input class="campi" type="text" name="cognome"> 
                         </td>
                     </tr>
-                    <tr>
-                        <td>User</td>
-                        <td>
-                            <input type="text" name="user">
+                    <tr >
+                        <td class="label">Data</tdclass="campi">
+                        <td class="label">
+                            <input class="campi" type="date" name="data_nascita"> 
                         </td>
                     </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td>
-                            <input type="password" name="password">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Data</td>
-                        <td>
-                            <input type="date" name="data_nascita"> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Genere</td>
-                        <td>
+                    <tr >
+                        <td class="label">Genere</tdclass="campi">
+                        <td class="label">
                             <input type="radio" name="gender" value="male" checked="checked"> M
                             <input type="radio" name="gender" value="female"> F
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <input type="Submit" value="submit">
+                        <td class="label">User</td>
+                        <td class="label">
+                            <input  class="campi" type="text" name="user">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Password</td>
+                        <td class="label">
+                            <input  class="campi" type="password" name="password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="bottone" colspan="2">
+                            <input id="submit" type="Submit" value="submit">
                         </td>
                     </tr>
                 </table>
-            </form>
+              </form> 
+            </div>
         </main>
     </body>
 </html>

@@ -1,55 +1,62 @@
-body { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+body { 
     margin:0;
-    font-family:arial; /* la definizione del font non è corretta. Perchè? vedere la definizione alla riga 16 */
-
+    font-family:"Arial", sans-serif; 
     display:grid;
         grid-template-columns:1fr;
         grid-template-rows:1.5fr 10fr;
     height:100vh;
 }
 
-main { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+main#new-user { 
     background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #ff6600 90%);
 }
 
-h3 { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+h3#titolo_form { 
     font-family: "Arial", sans-serif;
     color:black;
     position: relative;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
     letter-spacing: 2px;
 }
 
-form {
-    /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
-    /* il form non dovrebbe avere stile. l'idea del box che "avvolge" il form va benissimo ma dovete ottenerla usando un div */
+div#box {
     font-family: "Arial", sans-serif;
     color:black;
     background-color: rgba(255, 215, 188, 0.877);
     width: 400px;
-    height: 300px;  /* è proprio necessario definire l'altezza? */
     position: relative;
-    margin: 30px;   /* due attributi uguali vanno in conflitto */
-    margin: 0 auto; /* due attributi uguali vanno in conflitto */
+    margin: 0 auto;
+    margin-top: 50px;
     padding-top: 5px;
     border-radius: 5%;
     box-shadow: 5px 5px 20px #882222;
 }
 
-table { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+table#registrazione { 
     position: relative;
-    padding: 35px;
+    padding-top: 5px;
+    padding-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
 }
 
-td { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+table#registrazione tr td.label {
     padding: 5px;
 }
 
-input[type~="Submit"] { /* meglio non definire uno stile che verrà applicato a tutti i tag di un determinato tipo, è preferibile associare un id all'elemento */
+table#registrazione tr td.label input.campi{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #882222;
+    width: 140px;
+}
+
+#bottone {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+#submit { 
     display: block;
     margin: 0 auto;
     width: 100px;
