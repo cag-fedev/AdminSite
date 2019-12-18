@@ -63,7 +63,7 @@ div#main-container
 	letter-spacing: 2px;
 }
 
-h2#h2-001 {
-	letter-spacing: 0px;
-	font-style: italic;
+h1#h1-001, h2#h2-001
+{
+    text-shadow: 2px 2px 2px black;
 }
