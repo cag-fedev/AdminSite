@@ -1,0 +1,27 @@
+[
+  {
+    "position": "1",
+    "label": "Home",
+    "url": "indexAdmin.html"
+  },
+  {
+    "position": "2",
+    "label": "Crea Utente",
+    "url": "newUser.html"
+  },
+  {
+    "position": "3",
+    "label": "Cerca Utente",
+    "url": "searchUser.html"
+  },
+  {
+    "position": "4",
+    "label": "Crea Ruolo",
+    "url": "newRole.html"
+  },
+  {
+    "position": "5",
+    "label": "Cerca Ruolo",
+    "url": "searchRole.html"
+  }
+]
