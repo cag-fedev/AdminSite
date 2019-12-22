@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>AdminSite</title>
         <link rel="stylesheet" href="css/indexAdmin.css">
+        <script> const pageTitle="indexAdmin"; </script>
     </head>
     <body>
         <header>
@@ -12,7 +13,8 @@
                 <span id="title">AranciApp</span>
             </div>
             <div id="menu-bar">
-                <ul>
+                <ul id="ulMenu">
+                    <!--
                     <li>
                         <a class="link-active" href="indexAdmin.html">
                             Home
@@ -38,13 +40,16 @@
                             Search role
                         </a>
                     </li>
+                    -->
                 </ul>
             </div>
         </header>
         <main>
             <div id="main-container">
                 <h1 id="h1-001">Benvenuto nell'area gestionale</h1>
+                <!-- <input id="loadUl" type="button" value="carica menu"> -->
             </div>
         </main>
+        <script src="js/ajax.js"></script>
     </body>
 </html>
