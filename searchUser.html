@@ -3,26 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AdminSite</title>
-    <link rel="stylesheet" href="css/index.css">
+    
     <link rel="stylesheet" href="css/searchUser.css">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header> <!-- HEADER -->
+    <div>
         <div id="title-bar">
             <img  id="logo" src="imgs/arancia.png" alt="orange">
             <span id="title">AranciApp</span>
         </div>
-        <div id="menu-bar">
-            <a href="newUser.html">
-                <img id="menu-icon" src="imgs/gearWhite.png" alt="white gear">
-            </a>
+        <nav id="menu-bar" class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexAdmin.html"> HOME </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="newUser.html"> New user </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="searchUser.html"> Search user </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="newRole.html"> New role </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchRole.html"> Search role </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    
+    
+<div class="container mt-5">
+        <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="intestazione">id Dipendente</th>
+                  <th scope="col" class="intestazione">Nome</th>
+                  <th scope="col" class="intestazione">Cognome</th>
+                  <th scope="col" class="intestazione">Data di nascita</th>
+                  <th scope="col" class="intestazione">Genere</th>
+                  <th scope="col" class="intestazione">User</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="text" id="RicercaId" placeholder="Ricerca id"></td>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="text" id="RicercaNome" placeholder="Ricerca Nome"></td>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="text" id="RicercaCognome" placeholder="Ricerca Cognome"></td>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="date" id="RicercaData" placeholder="Ricerca Data"></td>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="text" id="RicercaGenere" placeholder="Ricerca Genere"></td>
+                  <td class="valori"><input class="campi form-control form-control-sm" type="text" id="RicercaUser" placeholder="Ricerca User"></td>
+                 
+                </tr>
+                <tr>
+                    <td class="valori">001</td>
+                    <td class="valori">Mario</td>
+                    <td class="valori"> Rossi</td>
+                    <td  class="valori">26/10/1960</td>
+                    <td  class="valori">M</td>
+                    <td  class="valori">MarioRossi</td>
+                </tr>
+                <tr>
+                <td class="valori">003</td>
+                <td class="valori">Luigi</td>
+                <td class="valori">Bianchi</td>
+                <td class="valori">01/03/1965</td>
+                <td class="valori">M</td>
+                <td class="valori">luigibianchi</td>
+               
+                </tr>
+              </tbody>
+            </table>
         </div>
-    </header>
-    <main>
+          </div>
+
+
+
+
         <!-- CORPO -->
-        <table class="tabellasearch">
+        <!--<table class="tabellasearch">
             <tr>
                 <th class="intestazione">id Dipendente</th>
                 <th class="intestazione">Nome</th>
@@ -33,7 +114,7 @@
                 
             </tr>
             <tr>
-                <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca id"></td>
+                <td class="valori"><input class="campi form-control form-control-sm" type="text" id="" onkeyup="" placeholder="Ricerca id"></td>
                 <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Nome"></td>
                 <td class="valori"><input type="text" id="" onkeyup="" placeholder="Ricerca Cognome"></td>
                 <td class="valori"><input type="date" id="" onkeyup="" placeholder="Ricerca Data di nascita"></td>
@@ -67,8 +148,30 @@
                 <td class="valori">M</td>
                 <td class="valori">luigibianchi</td>
             </tr>
-        </table>
-    </main>
+
+             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+        </table>-->
+    
+
+   
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+   
 
 </html>
