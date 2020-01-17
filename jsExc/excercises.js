@@ -131,7 +131,7 @@ function f08() {
 function f09() {
 	let x = 9;
 	if (x < 10) {
-		console.log('x è minore di 10')
+		console.log('x è minore di 10');
 	}
 	else {
 		console.log('x è maggiore uguale 10');
@@ -140,7 +140,7 @@ function f09() {
 
 function f10(x) {
 	if (x < 10) {
-		console.log('x è minore di 10')
+		console.log('x è minore di 10');
 	}
 	else {
 		console.log('x è maggiore uguale 10');
@@ -182,23 +182,20 @@ function f13() {
 	for (let i = 0; i < 9; i++) {
 		console.log(i);
 		if (i === 3) console.log('ho trovato il numero 3');
-
 	}
 }
 
 function f14() {
 	for (let i = 0; i < 9; i++) {
-		if (i === 3) break;
 		console.log(i);
-
+		if (i === 3) break;
 	}
 }
 
 function f15() {
 	for (let i = 0; i < 9; i++) {
-		console.log(i);
 		if (i === 3) continue;
-
+		console.log(i);
 	}
 }
 
@@ -213,6 +210,41 @@ function f16() {
 			console.log('trovato un numero con modulo 0 per 3 e per 5')
 			break;
 		}
-
 	}
 }
+
+
+function listPrimes(x)
+{
+	let primesArr = [];
+	primesArr.push(1);
+	primesArr.push(2);
+	// primesArr.push(3);
+
+	numberLoop: for (let i = 0; i <= x; i++)
+	{
+		console.log('------------------ current number is: ' + i);
+		let primeFlag = true;
+		primeLoop: for (let k = 1; k < primesArr.length; k++)
+		{
+			if (i > primesArr[k])
+			{
+				let currentPrime = primesArr[k];
+				let currentModule = i % currentPrime;
+				console.log('>> >> >> current prime is: ' + currentPrime);
+				if ( currentModule === 0)
+				{
+					console.warn('>> >> module value is: ' + (currentModule));
+					console.warn('>> >> ' + i + ' is not a prime');
+					primeFlag = false;
+					break primeLoop;
+				}
+			}
+		}
+		if (primeFlag === true) {
+			console.error('>> >> ' + i + ' is a prime');
+			if (i > 2) primesArr.push(i);
+		}
+	}
+}
+
